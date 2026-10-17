@@ -1,0 +1,148 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: #f0f2f5;
+  color: #222;
+}
+
+.page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.panel {
+  background: #fff;
+  border: 1px solid #d8dce2;
+  border-radius: 8px;
+  padding: 4px 16px 16px;
+  margin-bottom: 16px;
+}
+
+form {
+  display: grid;
+  gap: 12px;
+}
+
+.filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.filter input {
+  flex: 1 1 320px;
+}
+
+input,
+textarea {
+  padding: 8px 10px;
+  font: inherit;
+  border: 1px solid #b8bec7;
+  border-radius: 6px;
+  background: #fff;
+  box-sizing: border-box;
+}
+
+textarea {
+  width: 100%;
+  resize: vertical;
+}
+
+button {
+  padding: 8px 14px;
+  font: inherit;
+  cursor: pointer;
+  border: 1px solid #2d6cdf;
+  border-radius: 6px;
+  background: #2d6cdf;
+  color: #fff;
+}
+
+button:hover:not(:disabled) {
+  background: #1f56b8;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+button.danger {
+  background: #fff;
+  color: #b00020;
+  border-color: #b00020;
+}
+
+button.danger:hover:not(:disabled) {
+  background: #fdecee;
+}
+
+button.like {
+  background: #fff;
+  color: #2d6cdf;
+}
+
+button.like.liked {
+  background: #fdecee;
+  color: #b00020;
+  border-color: #b00020;
+}
+
+.feed-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.feed-header h2 {
+  word-break: break-all;
+}
+
+.feed {
+  display: grid;
+  gap: 12px;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #d8dce2;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  padding: 14px 16px;
+}
+
+.card-meta {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  font-size: 13px;
+  color: #5b6470;
+}
+
+.card-text {
+  margin: 12px 0;
+  font-size: 18px;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.card-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.likes {
+  flex: 1;
+}
+
+.address {
+  word-break: break-all;
+  font-family: monospace;
+}
+
+.error {
+  color: #b00020;
+}
